@@ -13,7 +13,7 @@ const defaultList = [
 @Injectable()
 export class TodoListStorageService {
 
-  private todoList;
+  private todoList: Array<any>;
 
   constructor() {
     this.todoList = JSON.parse(localStorage.getItem(storageName)) || defaultList;
@@ -57,7 +57,7 @@ export class TodoListStorageService {
 
   // remove an item
   destroy(item) {
-    this.todoList.splice(this.findItemIndex(item), 1);
+    this.todoList.splice(this.findItemIndex(item));
     return this.update();
   }
 }

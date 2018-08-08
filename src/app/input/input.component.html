@@ -3,7 +3,7 @@
     <input [value]="title"
       (keyup.enter)="changeTitle($event.target.value)"
       #inputElement>
-    <button class="btn btn-add" (click)="changeTitle(inputElement.value)">Save</button>
+    <button class="btn btn-add" (click)="changeTitle(inputElement)">Save</button>
   </div>
   <p>The title is {{ title }}</p>
 </div>

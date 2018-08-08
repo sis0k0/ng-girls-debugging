@@ -23,6 +23,6 @@ export class ItemComponent implements OnInit {
   }
 
   completeItem() {
-    this.isComplete = !this.isComplete;
+    this.isComplete = true;
   }
 }
