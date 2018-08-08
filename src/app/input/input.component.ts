@@ -12,7 +12,7 @@ export class InputComponent implements OnInit {
   @Output()
   submit: EventEmitter<string> = new EventEmitter<string>();
 
-  constructor() { 
+  constructor() {
   }
 
   ngOnInit() {
@@ -22,5 +22,4 @@ export class InputComponent implements OnInit {
     this.title = newTitle;
     this.submit.emit(newTitle);
   }
-
 }

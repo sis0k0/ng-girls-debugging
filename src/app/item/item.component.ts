@@ -9,9 +9,9 @@ export class ItemComponent implements OnInit {
 
   @Input()
   todoItem: any;
-  isComplete: boolean = false;
+  isComplete = false;
 
-  @Output() remove:EventEmitter<any> = new EventEmitter();
+  @Output() remove: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
