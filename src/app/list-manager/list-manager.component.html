@@ -1,0 +1,7 @@
+<h1 *ngIf="userLoggedIn">Welcome!</h1>
+<todo-input (submit)="addItem($event)"></todo-input>
+<ul>
+  <li *ngFor="let todo of todoList">
+    <todo-item [todoItem]="todo" (remove)=removeItem($event)></todo-item>
+  </li>
+</ul>
