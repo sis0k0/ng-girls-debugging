@@ -16,7 +16,8 @@ export class TodoListStorageService {
   private todoList: Array<any>;
 
   constructor() {
-    this.todoList = JSON.parse(localStorage.getItem(storageName)) || defaultList;
+    // this.todoList = JSON.parse(localStorage.getItem(storageName)) || defaultList;
+    this.todoList = [...defaultList];
   }
 
   // get items
